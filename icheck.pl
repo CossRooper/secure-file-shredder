@@ -116,7 +116,7 @@ sub removeMd5 {
 #function to securely delete / shred a file
 #Writes random numbers to the file before deleting it at the filesystem level
 sub shredFile {
-	
+		
 	#Open the file in binary mode
 	open (my $fh, '+<', $filepath) or die "cannot open '$file': $!";
 	binmode($fh);
